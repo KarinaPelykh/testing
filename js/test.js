@@ -81,3 +81,31 @@
 //   valueSpan.textContent = counter.value;
 //   console.log(counter);
 // });
+// const objC = {
+//   z: 5,
+// };
+// console.log(objC);
+// const objB = Object.create(objC);
+
+// // console.log(objB);
+// objB.c = 1;
+// console.log(objB);
+// const objA = Object.create(objB);
+// objA.t = 7;
+// console.log(objA);
+
+// const Car = function (value) {
+//   this.c = value;
+//   console.log(this);
+// };
+// Car.prototype.hi = 8;
+// console.log(Car.prototype);
+// const myCar = new Car(5);
+// console.log(myCar.hi);
+
+// const User = function ({ email, password } = {}) {
+//   this.email = email;
+// };
+
+// const user1 = new User({ email: "karina@gmail.com", password: 111111 });
+// console.log(user1);
