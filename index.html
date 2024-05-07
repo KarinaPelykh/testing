@@ -5,12 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+
   <body>
+    <!-- <style>
+      .grid-fle {
+        width: 640px;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(9, 140px);
+        grid-auto-rows: max-content;
+        gap: 20px;
+      }
+      .bloc {
+        background-color: blue;
+      }
+      .bloc1 {
+        grid-column: 1 /2;
+        grid-row: 1/3;
+      }
+
+      .bloc5 {
+        grid-column: 2 /4;
+        grid-row: 2/4;
+      }
+
+      .bloc8 {
+        grid-column: 3 /4;
+        grid-row: 4/6;
+      }
+      .bloc9 {
+        grid-column: 1/3;
+        grid-row: 5/7;
+      }
+    </style>
     <div>
       <button class="js-increment">Increment</button>
       <span class="js-value">0</span>
       <button class="js-decrement">Decrement</button>
     </div>
+
+    <div class="grid-fle">
+      <div class="bloc bloc1">1</div>
+      <div class="bloc">2</div>
+      <div class="bloc">3</div>
+      <div class="bloc">4</div>
+      <div class="bloc bloc5">5</div>
+      <div class="bloc">6</div>
+      <div class="bloc">7</div>
+      <div class="bloc bloc8">8</div>
+      <div class="bloc bloc9">9</div>
+      <div class="bloc">10</div>
+    </div>
+    <div class="widget">
+      <p>Background color: <span class="color">-</span></p>
+      <button class="button" type="button" class="change-color">
+        Change color
+      </button>
+    </div>
+    <ul class="ingredients"></ul>
+
+    <div id="counter">
+      <button type="button" data-action="decrement">-1</button>
+      <span id="value">0</span>
+      <button type="button" data-action="increment">+1</button>
+    </div>
+
+    <input id="font-size-control" type="range" min="16" max="96" />
+    <br />
+    <span id="text">Abracadabra!</span>
+
+    <div id="controls">
+      <input type="number" min="1" max="100" step="1" />
+      <button type="button" data-create>Create</button>
+      <button type="button" data-destroy>Destroy</button>
+    </div>
+
+    <div id="boxes"></div> -->
     <script type="module" src="js/test.js"></script>
   </body>
 </html>
