@@ -258,3 +258,127 @@
 //     console.log(clients);
 //   }
 // }
+//let password = "";
+
+//do {
+//password = prompt("Введіть пароль довший 4-х символів", "");
+//} while (password.length < 5);
+
+//console.log("Ввели пароль: ", password);
+// for (let i = 20; i >= 0; i -= 5) {
+//   console.log(i);
+// }
+// function highAndLow(numbers) {
+//   const min = Math.min(numbers);
+//   const max = Math.max(numbers);
+// }
+
+// highAndLow("1 2 3 4 5");
+
+// const video = document.querySelector("video");
+// const myVide = navigator.mediaDevices.getUserMedia({ video: true });
+// myVide
+//   .then((getStream) => (video.srcObject = getStream))
+//   .catch((error) => {
+//     console.log(error);
+//   });
+
+// const Slep = (time) => {
+//   return new Promise((resolov, reject) => {
+//     setTimeout(() => {
+//       resolov(`sleep ${time}hour`);
+//     });
+//   });
+// };
+// Slep(4000)
+//   .then((res) => console.log(res))
+//   .catch((error) => console.log(error));
+// function reverseWords(str) {
+//   return str
+//     .split(" ")
+//     .map((i) => {
+//       return i.split("").reverse().join("");
+//     })
+//     .join(" ");
+// }
+
+// reverseWords("double  spaces");
+// console.log(reverseWords("This is an example!"));
+
+//Classes
+
+// class MyClass {
+//   static Name = "Nan";
+//   constructor() {
+//     console.log("KArins");
+//     this.s = 60;
+//   }
+
+//   logName(name) {
+//     this.s = name;
+//   }
+// }
+// const classMy = new MyClass("ADE");
+// const classMy1 = new MyClass("TOP");
+// const classMy2 = new MyClass("smkxlsx");
+// console.log(classMy);
+// console.log(classMy1);
+// console.log(classMy2);
+
+// const handleFunction = () => {
+//   const log = 5;
+//   return log;
+// };
+// console.log(handleFunction());
+
+// const ref = {
+//   section: document.querySelector(".section"),
+//   form: document.querySelector(".js-todo"),
+//   input: document.querySelector(".input"),
+//   button: document.querySelector(".js-button"),
+//   list: document.querySelector(".list"),
+// };
+// let textTodo = [];
+
+// const addHtml = (textTodo) => {
+//   const item = textTodo.map(
+//     (item) =>
+//       `<div id=${item.id}  class="wrapper" >
+//     <li class="list-item"><input class="checkbox" name="checkbox" type="checkbox"/> ${item.text}</li> <button class="js-delete">Delete</button>
+//     </div>`
+//   );
+//   ref.list.innerHTML = item.join(" ");
+// };
+
+// const handelFormSubmit = (e) => {
+//   e.preventDefault();
+//   const { input } = e.target.elements;
+//   if (input.value) {
+//     textTodo.push({ text: input.value, id: new Date().toISOString() });
+//     addHtml(textTodo);
+//     input.value = "";
+//   }
+// };
+// const handleIsComplete = (e) => {
+//   const checkbox = e.target;
+//   const isDone = checkbox.classList.contains("checkbox");
+
+//   if (isDone) {
+//     alert("Very well you finished tasks!");
+//     // return checkbox.classList.toggle(!isDone);
+//   }
+
+// };
+
+// const handleDeleteTask = (e) => {
+//   const wrapper = e.target.closest(".wrapper");
+//   const taskId = wrapper.id;
+//   const buttonDeletes = e.target.classList.contains("js-delete");
+//   if (buttonDeletes) {
+//     textTodo = textTodo.filter((item) => item.id !== taskId);
+//     addHtml(textTodo);
+//   }
+// };
+// ref.form.addEventListener("submit", handelFormSubmit);
+// ref.list.addEventListener("click", handleIsComplete);
+// ref.list.addEventListener("click", handleDeleteTask);
